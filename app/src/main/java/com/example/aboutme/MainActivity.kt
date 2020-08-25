@@ -12,7 +12,7 @@ import com.example.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var myName = MyName("Noor Mahammad Chervu")
+    private var myName: MyName = MyName("Noor Mahammad Chervu")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         //val nickNameTextView = findViewById<TextView>(R.id.nickname_text)
 
         binding.apply {
-            myName?.nickName = nicknameEdit.text.toString()
+            //myName?.nickName = nicknameEdit.text.toString()
             invalidateAll()
             nicknameText.visibility = View.VISIBLE
             nicknameEdit.visibility = View.GONE
